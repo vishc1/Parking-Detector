@@ -162,10 +162,10 @@ def main():
                 st.metric("Confidence", f"{confidence * 100:.1f}%")
 
                 if predicted_class == "No Detection":
-                    st.warning("⚠️ No parking spot detected. Try a different image or angle.")
+                    st.warning("⚠️ No parking spot detected. Try a different image/angle")
 
                 st.markdown("---")
-                st.subheader("📊 All Predictions")
+                st.subheader("📊 All of the Predictions")
 
                 sorted_probs = sorted(probabilities.items(), key=lambda x: x[1], reverse=True)
 
@@ -194,10 +194,10 @@ def main():
         st.write("**How to use:**")
         st.write("1. Upload an image of a parking spot")
         st.write("2. Wait for the model to analyze it")
-        st.write("3. View the predicted parking type and confidence scores")
+        st.write("3. View the predicted parking type and confidence score(s)")
 
         st.markdown("---")
-        st.info("💡 For best results, use clear images that show parking markings or signs.")
+        st.info("💡 For best results, try using clear images that show parking markings or signs.")
 
 if __name__ == "__main__":
     main()
