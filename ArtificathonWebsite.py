@@ -3,7 +3,7 @@ from ultralytics import YOLO
 from PIL import Image
 import numpy as np
 
-MODEL_PATH = '/Users/vishwesh/parking/BestCarParkingModel2.pt'
+MODEL_PATH = 'BestCarParkingModel2.pt'
 
 ICONS = {
     'Disabled Parking': '♿',
